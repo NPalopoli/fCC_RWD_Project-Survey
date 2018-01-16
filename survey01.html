@@ -15,11 +15,11 @@ reports that use the suggested technology stack for this project. Happy coding!
 6X. If I enter an email that is not formatted correctly, I will see an HTML5 validation error. 
 7X. Inside the form, I can enter a number in a field with id="number". 
 8X. If I enter non-numbers in the number input, I will see an HTML5 validation error. 
-9. If I enter numbers outside the range of the number input, I will see an HTML5 validation error.' 
-10. For the name, email, and number input fields inside the form I can see corresponding labels that 
+9X. If I enter numbers outside the range of the number input, I will see an HTML5 validation error.' 
+10X. For the name, email, and number input fields inside the form I can see corresponding labels that 
 describe the purpose of each field with the following ids: 
 id="name-label", id="email-label", and id="number-label". 
-11. For the name, email, and number input fields, I can see placeholder text that gives me a description 
+11X. For the name, email, and number input fields, I can see placeholder text that gives me a description 
 or instructions for each field.' 
 12. Inside the form element, I can select an option from a dropdown that has corresponding id="dropdown".'
 13. Inside the form element, I can select a field from one or more groups of radio buttons. 
@@ -47,12 +47,12 @@ must have a value attribute.
         <p id="description">A short survey on people's knowledge about the nature of proteins.</p>
     </div>
     <form id="survey-form">
-        <label for="name">Name: </label>
-        <input type="text" id="name" required>  <!-- "X" must be equal in 'label for="X"' & 'input id="X"' -->
-        <label for="email">Email: </label>
-        <input type="email" id="email" required>  <!-- use type="email" to check input text is valid email -->
-        <label for="number">Number: </label>
-        <input type="number" id="number">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" id="name" placeholder="Enter your full name" required>  <!-- "X" must be equal in 'label for="X"' & 'input id="X"' -->
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" placeholder="Enter your email address" required>  <!-- use type="email" to check input text is valid email -->
+        <label for="number" id="number-label">One-digit Number: </label>
+        <input type="number" id="number" min="1" max="9" placeholder="Enter any one-digit number">
     </form>
 </body>
 </html>
