@@ -26,8 +26,8 @@ or instructions for each field.'
 Each group should be grouped using the name attribute. 
 14X. Inside the form element, I can select several fields from a series of checkboxes, each of which 
 must have a value attribute. 
-15. Inside the form element, I am presented with a <textarea> at the end for additional comments.' 
-16. Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+15X. Inside the form element, I am presented with a <textarea> at the end for additional comments.' 
+16X. Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
 -->
 
 <!DOCTYPE html>
@@ -100,6 +100,14 @@ must have a value attribute.
         <label for="identify6">
             <input type="checkbox" id="identify6" name="identify" value="albumin">Albumin
         </label>
+        <br>
+        <label for="comments">Additional comments: </label>
+        <br>
+        <textarea name="comments" rows="10" cols="30">Please enter any additional comments.
+        </textarea>
+        <br>
+        <button type="submit" id="submit">Submit
+        </button>
     </form>
 </body>
 </html>
