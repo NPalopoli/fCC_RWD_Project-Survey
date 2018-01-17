@@ -32,82 +32,96 @@ must have a value attribute.
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- IE displays content in highest supported mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- IE displays content in highest supported mode -->
     <title>Do you know what proteins are?</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- width as in viewport; zoom=100% -->
-    <link rel="stylesheet" type="text/css" media="screen" href="survey01.css" />  <!-- optimize for screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- width as in viewport; zoom=100% -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="survey01.css" />
+    <!-- optimize for screens -->
 </head>
+
 <body>
-    <div>
-        <h1 id="title">Do you know what proteins are?</h1>
-    </div>
-    <div>
-        <p id="description">A short survey on people's knowledge about the nature of proteins.</p>
-    </div>
-    <form id="survey-form">
-        <label for="name" id="name-label">Name: </label>
-        <input type="text" id="name" placeholder="Enter your full name" required>  <!-- "X" must be equal in 'label for="X"' & 'input id="X"' -->
-        <br>
-        <label for="email" id="email-label">Email: </label>
-        <input type="email" id="email" placeholder="Enter your email address" required>  <!-- use type="email" to check input text is valid email -->
-        <br>
-        <label for="number" id="number-label">One-digit Number: </label>
-        <input type="number" id="number" min="1" max="9" placeholder="Enter any one-digit number">
-        <br>
-        <label for="dropdown">Occupation: </label>
-        <select id="dropdown">
-            <option value="student" selected>Student</option>
-            <option value="employee">Employee</option>
-            <option value="employer">Employer</option>
-            <option value="housewife">Housewife</option>
-            <option value="retired">Retired</option>
-            <option value="other">Other</option>
-        </select>
-        <br>
-        <p>
-            Do you think proteins are a natural or a synthetic product?
-        </p>
-        <label for="nature1">
-            <input type="radio" id="nature1" name="nature" value="natural">Natural
-        </label>
-        <label for="nature2">
-            <input type="radio" id="nature2" name="nature" value="synthetic">Synthetic
-        </label>
-        <label for="nature3">
-            <input type="radio" id="nature3" name="nature" value="dontknow">Don't know
-        </label>
-        <br>
-        <p>
-            Select every element in the following list that correspond to a protein:
-        </p>
-        <label for="identify1">
-            <input type="checkbox" id="identify1" name="identify" value="meat">Meat
-        </label>
-        <label for="identify2">
-            <input type="checkbox" id="identify2" name="identify" value="arginine">Arginine
-        </label>
-        <label for="identify3">
-            <input type="checkbox" id="identify3" name="identify" value="haemoglobin">Haemoglobin
-        </label>
-        <label for="identify4">
-            <input type="checkbox" id="identify4" name="identify" value="supplements">Dietary supplements
-        </label>
-        <label for="identify5">
-            <input type="checkbox" id="identify5" name="identify" value="egg">Egg
-        </label>
-        <label for="identify6">
-            <input type="checkbox" id="identify6" name="identify" value="albumin">Albumin
-        </label>
-        <br>
-        <label for="comments">Additional comments: </label>
-        <br>
-        <textarea name="comments" rows="10" cols="30">Please enter any additional comments.
+    <div class="container">
+        <div class="row" style="border-style: dashed;">
+            <div class="col-sm-12">
+                <h1 id="title" class="display-3 text-center">Do you know what proteins are?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <p id="description">A short survey on people's knowledge about the nature of proteins.</p>
+        </div>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+            <!-- "X" must be equal in 'label for="X"' & 'input id="X"' -->
+            <br>
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <!-- use type="email" to check input text is valid email -->
+            <br>
+            <label for="number" id="number-label">One-digit Number: </label>
+            <input type="number" id="number" min="1" max="9" placeholder="Enter any one-digit number">
+            <br>
+            <label for="dropdown">Occupation: </label>
+            <select id="dropdown">
+                <option value="student" selected>Student</option>
+                <option value="employee">Employee</option>
+                <option value="employer">Employer</option>
+                <option value="housewife">Housewife</option>
+                <option value="retired">Retired</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <p>
+                Do you think proteins are a natural or a synthetic product?
+            </p>
+            <label for="nature1">
+                <input type="radio" id="nature1" name="nature" value="natural">Natural
+            </label>
+            <label for="nature2">
+                <input type="radio" id="nature2" name="nature" value="synthetic">Synthetic
+            </label>
+            <label for="nature3">
+                <input type="radio" id="nature3" name="nature" value="dontknow">Don't know
+            </label>
+            <br>
+            <p>
+                Select every element in the following list that correspond to a protein:
+            </p>
+            <label for="identify1">
+                <input type="checkbox" id="identify1" name="identify" value="meat">Meat
+            </label>
+            <label for="identify2">
+                <input type="checkbox" id="identify2" name="identify" value="arginine">Arginine
+            </label>
+            <label for="identify3">
+                <input type="checkbox" id="identify3" name="identify" value="haemoglobin">Haemoglobin
+            </label>
+            <label for="identify4">
+                <input type="checkbox" id="identify4" name="identify" value="supplements">Dietary supplements
+            </label>
+            <label for="identify5">
+                <input type="checkbox" id="identify5" name="identify" value="egg">Egg
+            </label>
+            <label for="identify6">
+                <input type="checkbox" id="identify6" name="identify" value="albumin">Albumin
+            </label>
+            <br>
+            <label for="comments">Additional comments: </label>
+            <br>
+            <textarea name="comments" rows="10" cols="30">Please enter any additional comments.
         </textarea>
-        <br>
-        <button type="submit" id="submit">Submit
-        </button>
-    </form>
+            <br>
+            <button type="submit" id="submit">Submit
+            </button>
+        </form>
+    </div>
 </body>
+
 </html>
