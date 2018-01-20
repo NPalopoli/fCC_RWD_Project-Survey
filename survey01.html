@@ -76,6 +76,35 @@ must have a value attribute.
                         <small class="form-text text-muted float-right">Required field</small>
                     </div>
                 </div>
+                <div class="form-group row">
+                    <div class="container-fluid p-0">
+                    <!-- form-row gives tighter layout than row; d-flex for Flexbox; full-width, equally spaced content -->
+                    <div class="form-row">
+                        <div class="form-group form-group-md col-md-6">
+                            <div class="row m-0">
+                            <!-- vertically center label with associated form control -->
+                                <label for="number" id="number-label" class="col-auto col-form-label pr-2 pl-0">Age</label>
+                            <!-- columns of required width -->
+                                <div class="col pr-0 pl-0">
+                                    <input type="number" id="number" class="form-control ml-0" min="0" max="120" placeholder="Select">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-group-sm col-md-6">
+                            <div class="row m-0">
+                                <label for="dropdown" class="col-auto col-form-label pr-2 pl-0">Occupation</label>
+                                <div class="col pr-0 pl-0">
+                                    <select id="dropdown" class="form-control ml-0">
+                                        <option value="dontask" selected>Prefer not to declare</option>
+                                        <option value="student">Student</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>                
                 <div class="form-row d-flex justify-content-between">
                     <!-- form-row gives tighter layout than row; d-flex for Flexbox; full-width, equally spaced content -->
                     <div class="col-auto col-form-label">
