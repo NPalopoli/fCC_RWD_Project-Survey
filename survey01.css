@@ -4,10 +4,26 @@
 }
 
 #description {
-    font-size:  1em;
+    font-size: 1em;
     margin-bottom: 1em;
 }
 
 .jumbotron {
     padding: 30px;
+}
+
+small.form-text {
+    display: inline-block;
+    font-style: italic; 
+    padding-left: 1em;
+}
+
+.form-inline > div > label {
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    #nature-label {
+        margin-bottom: 0;
+    }
 }

@@ -64,16 +64,16 @@ must have a value attribute.
                     <div class="form-group col-md-6">
                         <!-- form-group for grouping of labels, controls, text, etc -->
                         <label for="name" id="name-label">Name</label>
+                        <small class="form-text text-muted">Required field</small>
+                        <!-- small muted text -->
                         <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
                         <!-- "X" must be equal in 'label for="X"' & 'input id="X"' -->
-                        <small class="form-text text-muted float-right">Required field</small>
-                        <!-- small muted text -->
                     </div>
                     <div class="form-group col-md-6">
                         <label for="email" id="email-label">Email</label>
+                        <small class="form-text text-muted">Required field</small>
                         <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
                         <!-- use type="email" to check input text is valid email -->
-                        <small class="form-text text-muted float-right">Required field</small>
                     </div>
                 </div>
                 <div class="form-group row m-0">
@@ -371,42 +371,38 @@ must have a value attribute.
                 <div class="form-group row m-0">
                     <div class="container-fluid p-0">
                         <div class="form-row">
-                            <div class="form-group form-group-lg col-lg-6">
+                            <div class="form-group form-group-md col-md-5 mb-0">
                                 <div class="row m-0">
-                                    <label for="nature" id="nature-label" class="col-auto pr-2 pl-0">Do you think proteins are a natural or synthetic product?</label>
+                                    <label for="nature" id="nature-label" class="pr-2 pl-0">Do you think proteins are a natural or synthetic product?</label>
                                 </div>
                             </div>
-                            <div class="form-group form-group-lg col-lg-6">
-                                <div class="row m-0">
-                                    <div class="col p-0">
-                                        <label for="nature1">
-                                            <input type="radio" id="nature1" name="nature" value="natural">Natural
-                                        </label>
-                                        <label for="nature2">
-                                            <input type="radio" id="nature2" name="nature" value="synthetic">Synthetic
-                                        </label>
-                                        <label for="nature3">
-                                            <input type="radio" id="nature3" name="nature" value="dontknow">Don't know
-                                        </label>
-                                    </div>
-                                </div>
+                            <div class="form-inline justify-content-between align-items-start col-md-7">
+
+                                        <div class="d-flex justify-content-around align-items-start col-12 col-sm-3 pr-0">
+                                            <label for="nature1">
+                                                <input type="radio" id="nature1" name="nature" value="natural" class="mr-1">Natural
+                                            </label>
+                                        </div>
+                                        <div class="d-flex justify-content-around align-items-start col-12 col-sm-3 pr-0">
+                                            <label for="nature2">
+                                                <input type="radio" id="nature2" name="nature" value="synthetic" class="mr-1">Synthetic
+                                            </label>
+                                        </div>
+                                        <div class="d-flex justify-content-around align-items-start col-12 col-sm-3 pr-0">
+                                            <label for="nature3">
+                                                <input type="radio" id="nature3" name="nature" value="both" class="mr-1">Both
+                                            </label>
+                                        </div>
+                                        <div class="d-flex justify-content-around align-items-start col-12 col-sm-3 pr-0">
+                                            <label for="nature4">
+                                                <input type="radio" id="nature4" name="nature" value="dontknow" class="mr-1">Don't know
+                                            </label>
+                                        </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <p>
-                    Do you think proteins are a natural or a synthetic product?
-                </p>
-                <label for="nature1">
-                    <input type="radio" id="nature1" name="nature" value="natural">Natural
-                </label>
-                <label for="nature2">
-                    <input type="radio" id="nature2" name="nature" value="synthetic">Synthetic
-                </label>
-                <label for="nature3">
-                    <input type="radio" id="nature3" name="nature" value="dontknow">Don't know
-                </label>
-                <br>
                 <p>
                     Select every element in the following list that correspond to a protein
                 </p>
