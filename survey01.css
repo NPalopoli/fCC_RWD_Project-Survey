@@ -27,3 +27,9 @@ small.form-text {
         margin-bottom: 0;
     }
 }
+
+@media (max-width: 1199px) {
+    #nature-label {
+        margin-bottom: 0;
+    }
+}
