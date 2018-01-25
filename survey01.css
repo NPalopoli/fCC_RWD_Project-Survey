@@ -24,6 +24,24 @@ small.form-text {
 
 @media (max-width: 767px) {
     #nature-label {
-        margin-bottom: 0;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    #nature-label, #identify-label {
+        text-align: center;
+    }
+}
+
+textarea#comments {
+    overflow: hidden;
+    min-height: 2.5em;
+}
+
+@media (max-width: 767px) {
+    #comments-label {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
